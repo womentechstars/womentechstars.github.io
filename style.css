@@ -90,12 +90,50 @@ main{
     width: 80%
 }
 
+#nav-hamburger{
+    display: none;
+}
+
 @media screen and (max-width:768px) {
     main{width: 85%;}
 
     /*Navigation*/
 
-    
+    #navigation{
+        display: flex;
+        justify-content: space-between;
+        height: 50px
+    }
+
+    #home-logo{
+        width: 60px;
+        height: auto;
+        margin-left: 12px;
+    }
+
+    #nav-hamburger{
+        display: block;
+        margin-right: 12px;
+        cursor: pointer;
+    }
+
+    #nav-container {
+        background-color: white;
+        display: none;
+        position: absolute;
+        top: 74px;
+        right: 0;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px;
+    }
+
+    #nav-container a {
+        display: block;
+        text-align: right;
+        padding: 12px;
+        margin: 0 4px;
+        font-size: 16px;
+    }
 }
 
 footer{

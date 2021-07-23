@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="Personal Website">
     <link href="style.css" type="text/css" rel="stylesheet">
@@ -12,12 +13,14 @@
 <body>
 
     <div id="navigation">
-        <img id="home-logo" src="images/logo-whitebg.png"/>
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="schedule.html" class="nav-item">Schedule</a>
-        <a href="panelists.html" class="nav-item">Panelists</a>
-        <a href="about.html" class="nav-item">About Us</a>
-
+        <a href="index.html"><img id="home-logo" src="images/logo-whitebg.png"/></a>
+        <div id="nav-hamburger" onclick="onClickNavButton()">Menu</div>
+        <div id="nav-container">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="schedule.html" class="nav-item">Schedule</a>
+            <a href="panelists.html" class="nav-item">Panelists</a>
+            <a href="about.html" class="nav-item">About Us</a>
+        </div>
     </div>
 
     <div class="page-title">
@@ -54,7 +57,9 @@
                 </tr>
                 <tr>
                     <td>15:20 ~ 16:00</td>
-                    <td>Women Tech Stars Panel</td>
+                    <td>Women Tech Stars Panel
+                        <div>사회: 이현주 KAIST 전기및전자공학부 교수</div>
+                    </td>
                     <td>
                         <span class="name">최영리</span> <span class="title">UNIST 컴퓨터공학과 교수</span>
                         <br/>
@@ -70,16 +75,20 @@
                 </tr>
                 <tr>
                     <td>16:00 ~ 16:10</td>
-                    <td colspan="2">소회의실 배정</td>
+                    <td colspan="2">소회의실 배정
+                        <div style="font-size: 12px; color: red; margin-bottom: 8px;">* 해당 세션은 유튜브 스트리밍이 제공되지 않습니다</div>
+                    </td>
                 </tr>
                 <tr>
-                    <td>16:00 ~ 16:10</td>
-                    <td colspan="2">패널과의 대화</td>
+                    <td>16:10 ~ 16:45</td>
+                    <td colspan="2">패널과의 대화
+                        <div style="font-size: 12px; color: red; margin-bottom: 8px;">* 해당 세션은 유튜브 스트리밍이 제공되지 않습니다</div>
+                    </td>
                 </tr>
                 <tr>
                     <td>16:45 ~ 16:55</td>
                     <td>폐회사</td>
-                    <td><span class="name">이광형</span> <span class="title">KAIST 총장</span></td>
+                    <td><span class="name">이동만</span> <span class="title">KAIST 공과대학 주임</span></td>
                 </tr>
             </tbody>
         </table>
@@ -87,5 +96,5 @@
     </main>
 
     <footer>©KAIST ExploreCSR 2021</footer>
-
+    <script src="interaction.js"></script>
 </body>
