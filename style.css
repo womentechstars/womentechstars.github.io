@@ -94,6 +94,17 @@ main{
     display: none;
 }
 
+#main{
+    display: grid;
+    grid-template-columns: 55% 40%;
+    column-gap: 28px;
+}
+
+#poster{
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width:768px) {
     main{width: 85%;}
 
@@ -133,6 +144,12 @@ main{
         padding: 12px;
         margin: 0 4px;
         font-size: 16px;
+    }
+
+    #main{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 24px;
     }
 }
 
