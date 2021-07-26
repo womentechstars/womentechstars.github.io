@@ -137,12 +137,46 @@ main{
 }
 
 footer{
-    width: 100%;
+    width: 80%;
     height: 100px; 
-    line-height: 100px;
-    text-align: center;
     background-color: rgba(199, 199, 199, 0.6);
+    display: flex;
+    padding: 10px 10%;
+    justify-content: space-between;
+    font-weight: 200;
 }     
+
+
+#footer-left{
+    margin-top: 20px;
+    text-align: left;
+}
+
+#footer-right{
+    margin-top: 20px;
+    text-align: right;
+}
+
+@media screen and (max-width:768px) {
+    footer{
+        width: 80%;
+        background-color: rgba(199, 199, 199, 0.6);
+        display: block;
+        padding: 10px 10%;
+        justify-content: space-between;
+    } 
+
+    #footer-left{
+        margin-top: 8px;
+        text-align: left;
+    }
+    
+    #footer-right{
+        margin-top: 8px;
+        text-align: left;
+    }
+    
+}
 
 #intro{
     font-size: 18px;
