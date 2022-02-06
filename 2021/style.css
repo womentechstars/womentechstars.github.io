@@ -1,14 +1,8 @@
 *{
     margin:0;
     padding:0;
-    word-break: keep-all;
-}
-
-body{
-    color: white;
     font-family: 'Noto Sans KR', sans-serif;
-    background: rgb(48,50,68);
-    background: linear-gradient(157deg, rgba(48,50,68,1) 0%, rgba(2,2,2,1) 52%, rgba(58,53,74,1) 100%);
+    word-break: keep-all;
 }
 
 button{
@@ -20,69 +14,54 @@ button{
     font-size: 16px;
     font-weight: 500px;
     padding: 16px 20px;
-    border-radius: 28px;
+    border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
 }
 
 
 .button-white{
-    border: rgba(255, 255, 255, 0.8) solid 1px;
-    background-color: rgba(255, 255, 255, 0.05);
-    color: white;
-    transition: all ease-in-out 0.3s;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .button-white:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: all ease-in-out 0.3s;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .button-dark{
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    transition: all ease-in-out 0.3s;
+    color: white
 }
 
 .button-dark:hover{
     background-color: rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 0.3s;
 }
 
 #navigation{
     display: flex;
-    justify-content: space-between;
-    background-color: #020202;
+    background-color: white;
     color: black;
     align-items: center;
     padding: 12px;
-    height: 60px;
-    position:sticky;
-    top:0;
-    font-family: 'Montserrat';
+    height: 100px;
 }
 
 #home-logo{
-    width: 60px;
+    width: 80px;
     height: auto;
     margin-left: 40px;
 }
 
 a.nav-item{
     text-decoration: none;
-    color: white;
-    font-weight: 300;
-    font-size: 16px;
-    margin-right: 30px;
-    transition: all ease-in-out 0.3s;
-}
-
-a.nav-item:hover{
-    border-bottom:thistle solid 1px;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 30px;
 }
 
 #banner{
-
+    background-image: url("images/space.jpg");
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -105,17 +84,10 @@ a.nav-item:hover{
 }
 
 main{
-    padding: 50px 0; /* Footer height */
+    padding-bottom: 50px; /* Footer height */
     margin: 20px auto;
-    width: 100%;
-    background-color: white;
-    color: black;
-}
-
-#main, #schedule, #about{
     max-width: 1024px;
-    width: 80%;
-    margin: 0 auto;
+    width: 80%
 }
 
 #nav-hamburger{
@@ -134,6 +106,7 @@ main{
 }
 
 @media screen and (max-width:768px) {
+    main{width: 85%;}
 
     /*Navigation*/
 
@@ -153,11 +126,10 @@ main{
         display: block;
         margin-right: 12px;
         cursor: pointer;
-        color: white;
     }
 
     #nav-container {
-        background-color: #020202;
+        background-color: white;
         display: none;
         position: absolute;
         top: 74px;
@@ -179,15 +151,12 @@ main{
         grid-template-columns: 1fr;
         row-gap: 24px;
     }
-
-    #main, #schedule, #about{
-        width: 90%;
-    }
 }
 
 footer{
     width: 80%;
-    height: 100px;
+    height: 100px; 
+    background-color: rgba(199, 199, 199, 0.6);
     display: flex;
     padding: 10px 10%;
     justify-content: space-between;
@@ -208,6 +177,7 @@ footer{
 @media screen and (max-width:768px) {
     footer{
         width: 80%;
+        background-color: rgba(199, 199, 199, 0.6);
         display: block;
         padding: 10px 10%;
         justify-content: space-between;
@@ -245,7 +215,7 @@ footer{
 .page-title{
     font-weight: 500;
     font-size: 32px;
-    
+    background-color: rgba(13, 0, 128, 0.6);
     color: white;
     width: 100%;
     padding: 10px 0;
@@ -264,130 +234,55 @@ footer{
 
 /*Schedule page*/
 
-#session-wrapper{
-    display:grid;
-    grid-template-columns: 50% 50%;
+
+table{
+    line-height: 2;
+    font-size: 18px;
+    width: 100%;
+    border-collapse:collapse;
 }
 
-#schedule{
-    display:grid;
-    background-color: white;
-    color: black;
-    padding: 28px 16px;
-    grid-template-columns: 150px auto;
+thead{
+    font-weight: 500;
 }
 
-.time-range{
+tbody{
     font-weight: 300;
+    text-align: center;
 }
 
-.session-title{
-    background-color: #dadafe;
-    color:black;
-    font-size: 16px;
-    padding: 4px 8px;
-    border-radius: 4px;
+td{
+    border: 1px solid black;
 }
 
-.session-info{
-    font-size: 12px;
-    font-weight: 300;
-}
-
-.session{
-    padding: 0 12px;
-    margin-bottom: 20px;
-}
-
-.session-presentation, .tutorial-presentation{
-    border: #dadafe solid 1px;
-    border-radius: 4px;
-    margin-top: 8px;
-    padding: 8px;
-}
-
-.presenter{
-    display: grid;
-    grid-template-columns: 70px auto;
-    grid-template-rows: auto auto;
-    margin-bottom: 8px;
-}
-
-.presenter-name{
-    grid-row-start: 1;
-    grid-row-end: 3;
+.name{
     font-size: 20px;
     font-weight: 500;
-    align-self: center;
 }
-
-.presenter-affil, .presenter-reserach{
-    font-size: 12px;
-    font-weight: 300;
-    color: gray;
-}
-
-.tutorial-presentation .presenter-affil{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    align-self:flex-end;
-    margin-bottom: 4px;
-}
-
-.tutorial-presentation{
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-
-#tutorials{
-    padding: 0 12px; 
-    margin-bottom: 20px;
-}
-
-.p-title{
+.title{
     font-size: 16px;
-    font-weight: 300;
 }
 
-.d-title{
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 12px;
-}
-
-@media screen and (max-width:1150px) {
-
-    
-    #session-wrapper{
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
-}
+table{margin-top: 16px;}
 
 @media screen and (max-width:768px) {
-    #schedule{
-        display:grid;
-        padding: 0px 8px;
-        grid-template-columns: 1fr;
-        place-items: center;
+    table{
+        font-size: 14px;
     }
 
-    .session, #tutorials{
-        padding: 0;
-        width: 100%;
+    td{
+        padding: 3px;
     }
 
-    .time{
-        margin-bottom: 20px;
-        text-align: center;
+    .name{
+        font-size: 14px;
+        font-weight: 500;
     }
-
-    .d-title{
-        font-size: 20px;
-        text-align: center;
+    .title{
+        font-size: 12px;
     }
 }
+
 
 /* Panelists Page */
 
