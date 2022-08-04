@@ -164,11 +164,11 @@ main {
 		display: block;
 		margin-right: 12px;
 		cursor: pointer;
-		color: white;
+		color: black;
 	}
 
 	#nav-container {
-		background-color: #020202;
+		background-color: white;
 		display: none;
 		position: absolute;
 		top: 74px;
