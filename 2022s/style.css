@@ -135,11 +135,11 @@ main {
 	display: none;
 }
 
-/* #main {
+#main {
 	display: grid;
 	grid-template-columns: 55% 40%;
 	column-gap: 28px;
-} */
+}
 
 #poster {
 	width: 100%;
