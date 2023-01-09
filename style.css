@@ -122,7 +122,7 @@ main {
 	color: black;
 }
 
-#main,
+#main-intro,
 #schedule,
 #about,
 #speakers {
@@ -135,7 +135,7 @@ main {
 	display: none;
 }
 
-#main {
+#main-intro {
 	display: grid;
 	grid-template-columns: 1fr;
 }
@@ -185,13 +185,13 @@ main {
 		font-size: 16px;
 	}
 
-	#main {
+	#main-intro {
 		display: grid;
 		grid-template-columns: 1fr;
 		row-gap: 24px;
 	}
 
-	#main,
+	#main-intro,
 	#schedule,
 	#about {
 		width: 90%;
